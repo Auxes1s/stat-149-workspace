@@ -23,7 +23,6 @@ library(MASS)
 library(DHARMa)
 library(glmmTMB)
 library(performance)
-source("C:\\Users\\admin\\OneDrive - University of the Philippines\\Documents\\show_table.R")
 ```
 
 ```{r}
