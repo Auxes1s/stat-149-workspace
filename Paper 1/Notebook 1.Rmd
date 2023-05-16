@@ -11,6 +11,7 @@ install.packages("jtools")
 install.packages("kableExtra")
 install.packages("DHARMa")
 install.packages("performance")
+install.packages("here")
 ```
 
 ```{r}
@@ -23,10 +24,15 @@ library(MASS)
 library(DHARMa)
 library(glmmTMB)
 library(performance)
+library(here)
 ```
 
 ```{r}
-dat <- read.dta13("C:\\Users\\admin\\Downloads\\PH_2017_DHS_05042023_1428_186917\\PHIR71DT\\PHIR71FL.DTA")
+here("PHIR71FL.DTA")
+```
+
+```{r}
+dat <- read.dta13(here("PHIR71FL.DTA"))
 ```
 
 ```{r}
